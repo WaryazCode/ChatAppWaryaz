@@ -35,7 +35,9 @@
 import 'dotenv/config';
 
 export default {
+ 
   expo: {
+   
     name: 'expo-firebase-auth-example',
     slug: 'expo-firebase-auth-example',
     version: '1.0.0',
@@ -62,6 +64,9 @@ export default {
     web: {
       favicon: './assets/favicon.png'
     },
+    "android": {
+      "package": "Waryaz.apk"
+    },
     extra: {
       apiKey: process.env.API_KEY,
       authDomain: process.env.AUTH_DOMAIN,
@@ -71,4 +76,5 @@ export default {
       appId: process.env.APP_ID
     }
   }
+  
 };
